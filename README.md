@@ -5,12 +5,13 @@ For use:
 add Delegate in current ViewController: 
 HelpDelegate
 
-Change color for label Help description: 
+//Change color for label Help description: 
 
 HelpViewContainer.helpTextColor = .red
+
 HelpViewContainer.helpBackgroundColor = .black
 
-for call HelpView for first Time in viewWillAppear:
+//for call HelpView for first Time in viewWillAppear:
 
 override func viewDidAppear(_ animated: Bool) {
   if UserDefaults.standard.value(forKey: "helpInHome") == nil { //helpInHome is a var for identifier if a helpView was showed in this ViewController
