@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		728A028114458C25E1A072FF /* libPods-IHelpySwift.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 914C448B94846ABC58F06981 /* libPods-IHelpySwift.a */; };
 		FBB333CE224A5BBC00B9AC29 /* IHelpySwift.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB333CC224A5BBC00B9AC29 /* IHelpySwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FBB333D8224A5C6600B9AC29 /* HelpViewContainer.xib in Resources */ = {isa = PBXBuildFile; fileRef = FBB333D5224A5C6600B9AC29 /* HelpViewContainer.xib */; };
+		FBB333D9224A5C6600B9AC29 /* HelpViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB333D6224A5C6600B9AC29 /* HelpViewContainer.swift */; };
+		FBB333DA224A5C6600B9AC29 /* InteractiveHelpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB333D7224A5C6600B9AC29 /* InteractiveHelpView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5C58CBA110C7ABFACBA0972F /* Pods-IHelpySwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IHelpySwift.release.xcconfig"; path = "Target Support Files/Pods-IHelpySwift/Pods-IHelpySwift.release.xcconfig"; sourceTree = "<group>"; };
+		914C448B94846ABC58F06981 /* libPods-IHelpySwift.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IHelpySwift.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DAC701150DEB91D3F7BEB956 /* Pods-IHelpySwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IHelpySwift.debug.xcconfig"; path = "Target Support Files/Pods-IHelpySwift/Pods-IHelpySwift.debug.xcconfig"; sourceTree = "<group>"; };
 		FBB333C9224A5BBC00B9AC29 /* IHelpySwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IHelpySwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB333CC224A5BBC00B9AC29 /* IHelpySwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IHelpySwift.h; sourceTree = "<group>"; };
 		FBB333CD224A5BBC00B9AC29 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB333D5224A5C6600B9AC29 /* HelpViewContainer.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HelpViewContainer.xib; sourceTree = "<group>"; };
+		FBB333D6224A5C6600B9AC29 /* HelpViewContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelpViewContainer.swift; sourceTree = "<group>"; };
+		FBB333D7224A5C6600B9AC29 /* InteractiveHelpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveHelpView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				728A028114458C25E1A072FF /* libPods-IHelpySwift.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		467BC1006536F3B1A1143665 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DAC701150DEB91D3F7BEB956 /* Pods-IHelpySwift.debug.xcconfig */,
+				5C58CBA110C7ABFACBA0972F /* Pods-IHelpySwift.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E9610C97FFD61AC23882DF87 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				914C448B94846ABC58F06981 /* libPods-IHelpySwift.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FBB333BF224A5BBC00B9AC29 = {
 			isa = PBXGroup;
 			children = (
 				FBB333CB224A5BBC00B9AC29 /* IHelpySwift */,
 				FBB333CA224A5BBC00B9AC29 /* Products */,
+				467BC1006536F3B1A1143665 /* Pods */,
+				E9610C97FFD61AC23882DF87 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,10 +76,21 @@
 		FBB333CB224A5BBC00B9AC29 /* IHelpySwift */ = {
 			isa = PBXGroup;
 			children = (
+				FBB333D4224A5C4700B9AC29 /* Code */,
 				FBB333CC224A5BBC00B9AC29 /* IHelpySwift.h */,
 				FBB333CD224A5BBC00B9AC29 /* Info.plist */,
 			);
 			path = IHelpySwift;
+			sourceTree = "<group>";
+		};
+		FBB333D4224A5C4700B9AC29 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				FBB333D6224A5C6600B9AC29 /* HelpViewContainer.swift */,
+				FBB333D5224A5C6600B9AC29 /* HelpViewContainer.xib */,
+				FBB333D7224A5C6600B9AC29 /* InteractiveHelpView.swift */,
+			);
+			path = Code;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -70,6 +111,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FBB333D1224A5BBC00B9AC29 /* Build configuration list for PBXNativeTarget "IHelpySwift" */;
 			buildPhases = (
+				8DB7AA5838395C8C85C709FB /* [CP] Check Pods Manifest.lock */,
 				FBB333C4224A5BBC00B9AC29 /* Headers */,
 				FBB333C5224A5BBC00B9AC29 /* Sources */,
 				FBB333C6224A5BBC00B9AC29 /* Frameworks */,
@@ -95,6 +137,7 @@
 				TargetAttributes = {
 					FBB333C8224A5BBC00B9AC29 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -120,16 +163,44 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB333D8224A5C6600B9AC29 /* HelpViewContainer.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8DB7AA5838395C8C85C709FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-IHelpySwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FBB333C5224A5BBC00B9AC29 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBB333DA224A5C6600B9AC29 /* InteractiveHelpView.swift in Sources */,
+				FBB333D9224A5C6600B9AC29 /* HelpViewContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +331,9 @@
 		};
 		FBB333D2224A5BBC00B9AC29 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DAC701150DEB91D3F7BEB956 /* Pods-IHelpySwift.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -277,6 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.risalgue.IHelpySwift;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,7 +358,9 @@
 		};
 		FBB333D3224A5BBC00B9AC29 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C58CBA110C7ABFACBA0972F /* Pods-IHelpySwift.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
