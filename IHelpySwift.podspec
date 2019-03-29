@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "IHelpySwift"
-  s.version      = "0.0.1"
+  s.version = "0.1.0"
   s.summary      = "Interactive Help Library writer in Swift"
 
   # This description is used to generate tags and improve search results.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = "Library to help doing interctive helps in your app"
 
-  s.homepage     = "http://EXAMPLE/IHelpySwift"
+  s.homepage     = "https://github.com/risalgue/IHelpySwift"
   # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
@@ -37,7 +37,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
-  s.license      = "MIT (example)"
+  s.license      = { :type => "MIT", :file => "LICENSE" }
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
 
 
@@ -51,9 +51,8 @@ Pod::Spec.new do |s|
   #  profile URL.
   #
 
-  #s.authors          =
   # Or just: s.author    = "Reinier Melian Massip"
-  # s.authors            = { "Reinier Isalgue"  => "risalgue@gmail.com" ," "Reinier Melian Massip" => "rmelian2014@gmail.com" }
+  s.authors            = { "Reinier Isalgue"  => "risalgue@gmail.com" , "Reinier Melian Massip" => "rmelian2014@gmail.com" }
   # s.social_media_url   = "http://twitter.com/Reinier Melian Massip"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -63,10 +62,10 @@ Pod::Spec.new do |s|
   #
 
   # s.platform     = :ios
-  s.platform     = :ios, "11.0"
+  s.platform     = :ios, "11.2"
 
   #  When using multiple platforms
-  # s.ios.deployment_target = "5.0"
+    s.ios.deployment_target = "11.0"
   # s.osx.deployment_target = "10.7"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
@@ -78,7 +77,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/risalgue/IHelpySwift" }
+  s.source       = { :git => "https://github.com/risalgue/IHelpySwift.git",:branch => "master", :tag => "#{s.version}" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -89,8 +88,9 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "Classes", "Classes/**/*.{h,m}"
-  s.exclude_files = "Classes/Exclude"
+  s.source_files = "IHelpySwift/**/*.{swift}"
+	#s.source_files  = "Classes", "Classes/**/*.{h,m}"
+	#s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
 
@@ -128,7 +128,9 @@ Pod::Spec.new do |s|
   #  where they will only apply to your library. If you depend on other Podspecs
   #  you can include multiple dependencies to ensure it works.
 
-  # s.requires_arc = true
+
+  s.requires_arc = true
+  s.swift_version = "4.2"
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # s.dependency "JSONKit", "~> 1.4"
